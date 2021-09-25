@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   font-family: inherit;
+}
+
+html,
+body,
+#app {
+   height: 100%;
+}
+
+body {
+   --breakpoint-xs: 0;
+   --breakpoint-sm: 576px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 992px;
+   --breakpoint-xl: 1200px;
+
+   color: #f8f9fa;
+
+   font-family: "Public Sans", sans-serif;
+}
+
+#app {
+   position: relative;
+   background-color: #303841;
+}
