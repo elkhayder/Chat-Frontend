@@ -21,3 +21,24 @@ body {
    position: relative;
    background-color: #303841;
 }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: #e1e9f1;
+   font-family: Public Sans, sans-serif;
+   font-weight: 600;
+}
+
+.px {
+   padding: 0 1rem;
+}

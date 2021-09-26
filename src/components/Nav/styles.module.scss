@@ -1,5 +1,7 @@
+@import "../../styles/_variables.scss";
+
 .container {
-   height: 58px;
+   height: $navHeight;
    background-color: #36404a;
 
    position: absolute;

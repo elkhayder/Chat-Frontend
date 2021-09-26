@@ -1,0 +1,51 @@
+.container {
+   width: 100%;
+   height: 46px;
+
+   background-color: #36404a;
+
+   border-radius: 8px;
+   overflow: hidden;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.icon-container {
+   width: 52px;
+   height: 100%;
+
+   line-height: 46px;
+   text-align: center;
+
+   font-size: 18px;
+
+   color: #9aa1b9;
+}
+
+.input {
+   flex-grow: 1;
+   height: 100%;
+   background-color: transparent;
+   outline: none;
+   border: none;
+   color: inherit;
+
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+
+   padding: 12px;
+   padding-left: 0;
+
+   font-weight: 500;
+
+   font-size: 13px;
+
+   &::placeholder {
+      color: #9aa1b9;
+
+      font-weight: inherit;
+   }
+}
