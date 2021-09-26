@@ -14,24 +14,31 @@ const Nav: React.FC<NavPorps> = () => {
             <NavItem icon="ri-group-line" />
             <NavItem icon="ri-contacts-line" />
             <NavItem icon="ri-settings-2-line" />
+            <NavItem>
+               <img
+                  src="https://images.unsplash.com/photo-1617140610409-753b80274362?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=80"
+                  alt="Profile"
+                  className={styles["profile-picture"]}
+               />
+            </NavItem>
          </ul>
       </div>
    );
 };
 
 type NavItemPorps = {
-   icon: string;
+   icon?: string;
    selected?: boolean;
 };
 
-const NavItem: React.FC<NavItemPorps> = ({ icon, selected }) => {
+const NavItem: React.FC<NavItemPorps> = ({ icon, selected, children }) => {
    return (
       <li
          className={classNames(styles["item-container"], {
             [styles.active]: !!selected,
          })}
       >
-         <i className={icon} />
+         {children ? children : <i className={icon} />}
       </li>
    );
 };

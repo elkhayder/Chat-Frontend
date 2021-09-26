@@ -13,15 +13,8 @@ body,
 }
 
 body {
-   --breakpoint-xs: 0;
-   --breakpoint-sm: 576px;
-   --breakpoint-md: 768px;
-   --breakpoint-lg: 992px;
-   --breakpoint-xl: 1200px;
-
-   color: #f8f9fa;
-
    font-family: "Public Sans", sans-serif;
+   color: #f8f9fa;
 }
 
 #app {

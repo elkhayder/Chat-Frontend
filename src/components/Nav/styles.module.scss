@@ -35,8 +35,25 @@
 
    color: #a6b0cf;
 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   cursor: pointer;
+
    &.active {
       background-color: #3e4a56;
       color: #7269ef;
    }
+}
+
+.profile-picture {
+   width: 36px;
+   height: 36px;
+   border-radius: 36px;
+   display: block;
+   overflow: hidden;
+   object-fit: contain;
+
+   margin-left: -8px;
 }
