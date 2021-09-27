@@ -2,7 +2,7 @@ import React from "react";
 
 import Nav from "./components/Nav";
 import ChatsPage from "./pages/Chats";
-import ConversationPage from "./pages/Conversation";
+// import ConversationPage from "./pages/Conversation";
 
 const App: React.FC = () => {
    React.useEffect(() => {
