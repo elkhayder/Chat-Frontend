@@ -7,6 +7,7 @@ import TextInput from "../../components/TextInput";
 import ProfilePicture from "../../components/ProfilePicture";
 
 import styles from "./styles.module.scss";
+import classNames from "classnames";
 
 type ChatsPageProps = {};
 
@@ -29,6 +30,7 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
                      name="Walid Idlhaj"
                      time="5min"
                      notificationsCount={3}
+                     active
                   />
                   <Conversation
                      img="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
@@ -88,6 +90,7 @@ type ConversationPorps = {
    message: string;
    time: string;
    notificationsCount?: number;
+   active?: boolean;
 };
 
 const Conversation: React.FC<ConversationPorps> = ({
@@ -96,10 +99,15 @@ const Conversation: React.FC<ConversationPorps> = ({
    name,
    time,
    notificationsCount,
+   active,
 }) => {
    return (
       <a href="#" onClick={(e) => e.preventDefault()}>
-         <div className={styles.conversation}>
+         <div
+            className={classNames(styles.conversation, {
+               [styles.active]: !!active,
+            })}
+         >
             <div style={{ marginRight: 16 }}>
                <ProfilePicture {...{ img }} />
             </div>

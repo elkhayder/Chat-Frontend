@@ -24,10 +24,14 @@ const ConversationPage: React.FC<ConversationPagePorps> = () => {
    return (
       <div className={styles.container}>
          <div className={styles.header}>
-            <IconButton icon="ri-arrow-left-s-line" />
+            <IconButton
+               icon="ri-arrow-left-s-line"
+               className={styles["back-button"]}
+            />
             <ProfilePicture
                img="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
                size={36}
+               className={styles["header-profile-image"]}
             />
             <h3>Youness Zerroudi</h3>
             <IconButton icon="ri-search-line" />
