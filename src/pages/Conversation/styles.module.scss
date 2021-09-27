@@ -4,6 +4,9 @@
    z-index: 3;
 
    background-color: #262e35;
+
+   display: flex;
+   flex-direction: column;
 }
 
 .header,
@@ -39,9 +42,9 @@
    padding-left: 0.5rem;
 
    border-bottom-width: 1px;
-   position: absolute;
-   inset: 0;
-   top: auto;
+   // position: absolute;
+   // inset: 0;
+   // top: auto;
 
    gap: 4px;
 
@@ -62,7 +65,7 @@
 }
 
 .messages-list-container {
-   height: calc(100vh - calc(73px * 2));
+   height: calc(var(--view-height, 100vh) - calc(73px * 2));
    width: 100%;
 }
 
