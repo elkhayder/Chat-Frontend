@@ -12,8 +12,8 @@
 }
 
 .conversations-list {
-   // flex: 1;
-   height: calc(var(--view-height, 100vh) - 221px);
+   --minus: $navHeight;
+   height: calc(var(--view-height, 100vh) - var(--minus) - 163px);
 }
 
 .conversation {
@@ -82,5 +82,11 @@
       position: absolute;
       right: 0px;
       bottom: 4px;
+   }
+}
+
+@media (min-width: $mobileBreakpoint) {
+   .conversations-list {
+      --minus: 8px;
    }
 }

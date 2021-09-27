@@ -63,3 +63,25 @@
 
    margin-left: -8px;
 }
+
+@media (min-width: $mobileBreakpoint) {
+   .container {
+      height: var(--view-height, 100vh);
+      width: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      order: 1;
+   }
+
+   .items-list {
+      flex-direction: column;
+      max-height: 400px;
+   }
+
+   .profile-picture {
+      margin-left: 0;
+   }
+}

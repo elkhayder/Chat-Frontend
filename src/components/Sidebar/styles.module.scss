@@ -23,3 +23,13 @@
 .title {
    font-size: 22.5px;
 }
+
+@media (min-width: $mobileBreakpoint) {
+   .container {
+      height: var(--view-height, 100vh);
+      width: 380px;
+      flex: 0;
+
+      order: 2;
+   }
+}
