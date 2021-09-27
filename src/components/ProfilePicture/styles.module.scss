@@ -1,0 +1,25 @@
+.container {
+   width: var(--size);
+   height: var(--size);
+
+   position: relative;
+
+   img {
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+
+      border-radius: var(--size);
+   }
+
+   span {
+      width: calc(var(--size) * 10 / 35);
+      height: calc(var(--size) * 10 / 35);
+      background-color: #9aa1b9;
+      border-radius: 50%;
+      border: calc(var(--size) * 2 / 35) solid #262e35;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+}

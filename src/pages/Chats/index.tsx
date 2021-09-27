@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PerfectScrollbar from "react-perfect-scrollbar";
 
 import Sidebar from "../../components/Sidebar";
 import TextInput from "../../components/TextInput";
+import ProfilePicture from "../../components/ProfilePicture";
 
 import styles from "./styles.module.scss";
 
@@ -13,7 +15,10 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
       <Sidebar title="Chats">
          <div className={styles["container"]}>
             <div className="px">
-               <TextInput />
+               <TextInput
+                  icon="ri-search-line"
+                  placeholder="Search messages or users"
+               />
                <h3 className={styles.title}>Recent</h3>
             </div>
             <div className={styles["conversations-list"]}>
@@ -93,19 +98,21 @@ const Conversation: React.FC<ConversationPorps> = ({
    notificationsCount,
 }) => {
    return (
-      <div className={styles.conversation}>
-         <div className={styles["profile-image"]}>
-            <img src={img} alt="Profile" />
+      <a href="#" onClick={(e) => e.preventDefault()}>
+         <div className={styles.conversation}>
+            <div style={{ marginRight: 16 }}>
+               <ProfilePicture {...{ img }} />
+            </div>
+            <div className={styles.data}>
+               <h5>{name}</h5>
+               <p>{message}</p>
+            </div>
+            <div className={styles.info}>
+               <h5>{time}</h5>
+               {notificationsCount && <span>{notificationsCount}</span>}
+            </div>
          </div>
-         <div className={styles.data}>
-            <h5>{name}</h5>
-            <p>{message}</p>
-         </div>
-         <div className={styles.info}>
-            <h5>{time}</h5>
-            {notificationsCount && <span>{notificationsCount}</span>}
-         </div>
-      </div>
+      </a>
    );
 };
 

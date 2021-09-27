@@ -1,20 +1,27 @@
+import classNames from "classnames";
 import React from "react";
 
 import styles from "./styles.module.scss";
 
-type TextInputPorps = {};
+type TextInputPorps = { icon?: string } & React.DetailedHTMLProps<
+   React.InputHTMLAttributes<HTMLInputElement>,
+   HTMLInputElement
+>;
 
-const TextInput: React.FC<TextInputPorps> = () => {
+const TextInput: React.FC<TextInputPorps> = ({
+   icon,
+   className,
+   style,
+   ...props
+}) => {
    return (
-      <div className={styles.container}>
-         <div className={styles["icon-container"]}>
-            <i className="ri-search-line" />
-         </div>
-         <input
-            type="text"
-            className={styles.input}
-            placeholder="Search messages or users"
-         />
+      <div className={classNames(styles.container, className)} {...{ style }}>
+         {icon && (
+            <div className={styles["icon-container"]}>
+               <i className={icon} />
+            </div>
+         )}
+         <input type="text" className={styles.input} {...props} />
       </div>
    );
 };
