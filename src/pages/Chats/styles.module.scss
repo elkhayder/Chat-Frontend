@@ -12,7 +12,8 @@
 }
 
 .conversations-list {
-   height: calc(100vh - 220px);
+   // flex: 1;
+   height: calc(var(--view-height, 100vh) - 221px);
 }
 
 .conversation {

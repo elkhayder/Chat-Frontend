@@ -1,9 +1,10 @@
 @import "../../styles/_variables.scss";
 
 .container {
-   position: absolute;
-   inset: 0;
-   bottom: $navHeight;
+   // position: absolute;
+   // inset: 0;
+   // bottom: $navHeight;
+   flex: 1;
 
    width: 100%;
 
