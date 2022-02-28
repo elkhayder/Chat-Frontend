@@ -26,7 +26,7 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
                <PerfectScrollbar>
                   <Conversation
                      img="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
-                     message="Ta sir t9wd"
+                     message="Ww"
                      name="Walid Idlhaj"
                      time="5min"
                      notificationsCount={3}
@@ -35,13 +35,13 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
                   <Conversation
                      img="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
                      message="Yeah, sure!"
-                     name="Selma Benzabi"
+                     name="Selma tchalall"
                      time="1h"
                      notificationsCount={1}
                   />
                   <Conversation
                      img="https://images.unsplash.com/photo-1484186694682-a940e4b1a9f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
-                     message="La, lbare7 knt bagha ngulha ik a sat, wlh 7ta tay7a fik!"
+                     message="La, lbare7 knt bagha ngulha ik a sat!"
                      name="Roaya khoufar"
                      time="04:33pm"
                   />
@@ -53,7 +53,7 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
                   />
                   <Conversation
                      img="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
-                     message="Ta sir t9wd"
+                     message="Ww"
                      name="Walid Idlhaj"
                      time="5min"
                      notificationsCount={3}
@@ -61,13 +61,13 @@ const ChatsPage: React.FC<ChatsPageProps> = () => {
                   <Conversation
                      img="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
                      message="Yeah, sure!"
-                     name="Selma Benzabi"
+                     name="Selma tchalall"
                      time="1h"
                      notificationsCount={1}
                   />
                   <Conversation
                      img="https://images.unsplash.com/photo-1484186694682-a940e4b1a9f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=64&q=100"
-                     message="La, lbare7 knt bagha ngulha ik a sat, wlh 7ta tay7a fik!"
+                     message="La, lbare7 knt bagha ngulha ik a sat!"
                      name="Roaya khoufar"
                      time="04:33pm"
                   />
