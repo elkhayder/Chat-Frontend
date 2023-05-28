@@ -12,7 +12,7 @@
 
 html,
 body,
-#app {
+#root {
    height: 100%;
 }
 
@@ -21,7 +21,7 @@ body {
    color: #f8f9fa;
 }
 
-#app {
+#root {
    position: relative;
    background-color: #303841;
    display: flex;
@@ -29,7 +29,7 @@ body {
 }
 
 @media (min-width: $mobileBreakpoint) {
-   #app {
+   #root {
       flex-direction: row;
    }
 }
